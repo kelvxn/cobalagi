@@ -18,11 +18,6 @@
                     <table class="table table-hover">
                         <thead class="table-dark">
                             <tr>
-                                <th>ID</th>
-                                <th>Nama User</th>
-                                <th>Email</th>
-                                <th>Sertifikat</th>
-                                <th  ggaggaga>Action</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -36,10 +31,10 @@
                                 </td>
                                 <td class="align-middle">
                                     @if($item->status==0)
-                                    <a href="{{url('verify-user/'.$item->id)}}" class="btn btn-success shadow-lg gsgsgsgs">ACC</a>
+                                    <a href="{{url('verify-user/'.$item->id)}}" class="btn btn-success shadow-lg">ACC</a>
                                     @endif
                                     @if($item->status==1)
-                                    <a href="{{url('block-user/'.$item->id)}}" class="btn btn-danger shadow-lg awrega rege">BLOCK</a>
+                                    <a href="{{url('block-user/'.$item->id)}}" class="btn btn-danger shadow-lg">BLOCK</a>
                                     @endif
 
                                 </td>
