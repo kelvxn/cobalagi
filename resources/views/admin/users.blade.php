@@ -8,7 +8,6 @@
 <br>
 <div class="container">
     <div class="row">
-        
         <div class="col-md-12">
             <div class="card shadow">
                 <div class="card-header">
@@ -18,6 +17,11 @@
                     <table class="table table-hover">
                         <thead class="table-dark">
                             <tr>
+                                <th>ID</th>
+                                <th>Nama User</th>
+                                <th>Email</th>
+                                <th>Sertifikat</th>
+                                <th>Action</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -31,10 +35,10 @@
                                 </td>
                                 <td class="align-middle">
                                     @if($item->status==0)
-                                    <a href="{{url('verify-user/'.$item->id)}}" class="btn btn-succes shadow-lg">ACC</a>
+                                    <a href="{{url('verify-user/'.$item->id)}}" class="btn btn-success shadow-lg">ACC</a>
                                     @endif
                                     @if($item->status==1)
-                                    <a href="{{url('block-user/'.$item->id)}}" class="btn btn-danger">BLOCK</a>
+                                    <a href="{{url('block-user/'.$item->id)}}" class="btn btn-danger shadow-lg">BLOCK</a>
                                     @endif
 
                                 </td>
