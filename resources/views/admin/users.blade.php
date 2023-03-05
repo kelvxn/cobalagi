@@ -31,10 +31,10 @@
                                 </td>
                                 <td class="align-middle">
                                     @if($item->status==0)
-                                    <a href="{{url('verify-user/'.$item->id)}}" class="btn btn-success shadow-lg">ACC</a>
+                                    <a href="{{url('verify-user/'.$item->id)}}" class="btn btn-succes shadow-lg">ACC</a>
                                     @endif
                                     @if($item->status==1)
-                                    <a href="{{url('block-user/'.$item->id)}}" class="btn btn-danger shadow-lg">BLOCK</a>
+                                    <a href="{{url('block-user/'.$item->id)}}" class="btn btn-danger">BLOCK</a>
                                     @endif
 
                                 </td>
